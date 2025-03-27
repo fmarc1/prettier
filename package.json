@@ -1,17 +1,14 @@
 {
-  "name": "prettier",
-  "version": "3.6.0-dev",
+  "name": "@fmarc1/prettier",
+  "version": "3.6.0",
   "description": "Prettier is an opinionated code formatter",
   "bin": "./bin/prettier.cjs",
-  "repository": "prettier/prettier",
-  "funding": "https://github.com/prettier/prettier?sponsor=1",
-  "homepage": "https://prettier.io",
-  "author": "James Long",
+  "repository": "https://github.com/fmarc1/prettier",
+  "homepage": "https://github.com/fmarc1/prettier",
+  "author": "fmarc1",
   "type": "module",
   "license": "MIT",
   "main": "./src/index.cjs",
-  "browser": "./standalone.js",
-  "unpkg": "./standalone.js",
   "exports": {
     ".": {
       "types": "./src/index.d.ts",
@@ -22,6 +19,9 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "files": [
     "index.js",
