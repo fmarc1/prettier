@@ -95,7 +95,11 @@ function printBlockBody(path, options, print) {
   }
 
   if (hasBody) {
-    parts.push(printStatementSequence(path, options, print, "body"));
+    parts.push(
+      hardline,
+      printStatementSequence(path, options, print, "body"),
+      hardline,
+    );
   }
 
   if (hasDanglingComments) {
